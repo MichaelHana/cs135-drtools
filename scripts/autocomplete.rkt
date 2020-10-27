@@ -98,6 +98,25 @@
         [else (cons n (countdown (sub1 n)))]))\n
 ;; Tests")
 
+;;****requested section**** (sorry if this is a waste of time i'm inexperienced)
+     ("node" "(define-struct Node (key left right)) " "
+;; A Node is a (make-node Num BT BT)\n
+;; A Binary Tree (BT) is one of:
+;; - empty
+;; - Node\n")
+     ("bt" ";; (bt-template bt) " "
+;; Examples:
+(check-expect (bt-template ) )
+(check-expect (bt-template ) )
+;; bt-template: bt -> 
+(define (bt-template bt)
+ (cond [(empty? bt) ...]
+       [(node? bt) (... (node-key bt)
+                        (bt-template (node-left bt))
+                        (bt-template (node-right bt)))]))\n
+;; Tests:\n")
+;;*************************************
+
     #| Defaults from complete-word plugin of quickscript extras
     ("dsr"   "(define-syntax-rule (" ")\n  )")
     ("ds"    "(define-syntax " "\n  )")
